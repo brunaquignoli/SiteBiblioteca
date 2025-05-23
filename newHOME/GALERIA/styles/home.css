@@ -241,3 +241,27 @@ body {
   color: #000000;
   padding: 10px 20px ;
 }
+
+/* tela pesquisar livro */
+.input {
+  width: 1250px;
+  height: 40px;
+  border: none;
+  outline: none;
+  caret-color: #1C5249;
+  background-color: #ccc;
+  border-radius: 30px;
+  padding-left: 30px;
+  margin-left: 185px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  color: rgb(19, 19, 19);
+  font-size: 13.4px;
+}
+
+.Wrapper {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
