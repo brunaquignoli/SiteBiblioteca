@@ -14,11 +14,24 @@
     */
 
 body {
-  background: linear-gradient(180deg, #FFFFFF, #EDEBE6, #D5C3AA);
+  background: linear-gradient(270deg, #FFFFFF, #EDEBE6, #D5C3AA, #EDEBE6, #FFFFFF);
   background-size: 500% 500%;
   animation: gradientBGB 15s ease infinite;
   min-height: 100vh;
-  background-position: center;
+  margin: 0;
+}
+
+
+@keyframes gradientBGB {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes hueShift {
+  0% { filter: hue-rotate(0deg); }
+
+  100% { filter: hue-rotate(20deg); }
 }
 
 
@@ -27,7 +40,7 @@ body {
   top: 0;
   left: 0;
   height: 100%;
-  width: 65px;
+  width: 75px;
   display: flex;
   overflow-x: hidden;
   flex-direction: column;
@@ -36,7 +49,7 @@ body {
   animation: gradientBG 8s ease infinite alternate, hueShift 30s linear infinite;
   animation-delay: 2s;
   -ms-overflow-style: none;
-  padding: 25px 20px;
+  padding: 20px 20px;
   transition: all 0.4s ease;
 }
 
@@ -141,7 +154,7 @@ body {
   color: #fff;
   font-weight: 500;
   white-space: nowrap;
-  padding: 15px 0px;
+  padding: 15px 10px;
   text-decoration: none;
   transition: 0.2s ease;
 }
@@ -207,4 +220,24 @@ body {
   border: none;
   background: transparent;
   flex: 1;
+}
+
+/* tela consultar todos*/
+.consultas {
+  width: calc(100% - 250px);
+  max-width: 1600px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 5% 5% 10% 165px;
+  padding: 20px;
+  background-color: rgb(218, 207, 184);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.consultas p{
+  text-align: justify;
+  color: #000000;
+  padding: 10px 20px ;
 }
