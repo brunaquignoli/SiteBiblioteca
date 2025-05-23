@@ -13,6 +13,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     box-sizing: border-box;
 }
 
+p {
+    text-align: center;
+}
+
 body {
     display: flex;
     align-items: center;

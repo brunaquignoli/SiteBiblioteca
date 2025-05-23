@@ -20,7 +20,7 @@ public class Livro {
     private int volume;
     private String saga;
     private String idioma;
-    private int datapublicacao;
+    private String datapublicacao;
     private int disponibilidade;
     private String categoria;
     private String versao;
@@ -107,11 +107,11 @@ public class Livro {
         this.idioma = idioma;
     }
 
-    public int getDatapublicacao() {
+    public String getDatapublicacao() {
         return datapublicacao;
     }
 
-    public void setDatapublicacao(int datapublicacao) {
+    public void setDatapublicacao(String datapublicacao) {
         this.datapublicacao = datapublicacao;
     }
     

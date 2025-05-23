@@ -32,7 +32,7 @@ public class LivroDAO {
         comando.setInt(7, liv.getVolume());
         comando.setString(8, liv.getSaga());
         comando.setString(9, liv.getIdioma());
-        comando.setInt(10, liv.getDatapublicacao());
+        comando.setString(10, liv.getDatapublicacao());
         comando.setInt(11, liv.getDisponibilidade());
         comando.setString(12, liv.getCategoria());
         comando.setString(13, liv.getVersao());
@@ -64,7 +64,7 @@ public class LivroDAO {
         comando.setInt(7, liv.getVolume());
         comando.setString(8, liv.getSaga());
         comando.setString(9, liv.getIdioma());
-        comando.setInt(10, liv.getDatapublicacao());
+        comando.setString(10, liv.getDatapublicacao());
         comando.setInt(11, liv.getDisponibilidade());
         comando.setString(12, liv.getCategoria());
         comando.setString(13, liv.getVersao());
@@ -81,8 +81,11 @@ public class LivroDAO {
         PreparedStatement comando = con.prepareStatement(SQL);
         comando.setInt(1, liv.getId());
         ResultSet rs = comando.executeQuery();
-        Livro L = new Livro();
+        
+        Livro L = null;
+        
         if (rs.next()) {
+            L = new Livro();
             L.setId(rs.getInt("id"));
             L.setTitulo(rs.getString("titulo"));
             L.setAutor(rs.getString("autor"));
@@ -93,7 +96,7 @@ public class LivroDAO {
             L.setVolume(rs.getInt("volume"));
             L.setSaga(rs.getString("saga"));
             L.setIdioma(rs.getString("idioma"));
-            L.setDatapublicacao(rs.getInt("datapublicacao"));
+            L.setDatapublicacao(rs.getString("datapublicacao"));
             L.setDisponibilidade(rs.getInt("disponibilidade"));
             L.setCategoria(rs.getString("categoria"));
             L.setVersao(rs.getString("versao"));
@@ -124,7 +127,7 @@ public class LivroDAO {
             L.setVolume(rs.getInt("volume"));
             L.setSaga(rs.getString("saga"));
             L.setIdioma(rs.getString("idioma"));
-            L.setDatapublicacao(rs.getInt("datapublicacao"));
+            L.setDatapublicacao(rs.getString("datapublicacao"));
             L.setDisponibilidade(rs.getInt("disponibilidade"));
             L.setCategoria(rs.getString("categoria"));
             L.setVersao(rs.getString("versao"));

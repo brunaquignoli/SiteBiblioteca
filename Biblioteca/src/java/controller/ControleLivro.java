@@ -50,7 +50,7 @@ public class ControleLivro extends HttpServlet {
                 int volume = Integer.parseInt(request.getParameter("txtvolume"));
                 String saga = request.getParameter("txtsaga");
                 String idioma = request.getParameter("txtidioma");
-                int datapublicacao = Integer.parseInt(request.getParameter("txtdatapublicacao"));
+                String datapublicacao = request.getParameter("txtdatapublicacao");
                 int disponibilidade = Integer.parseInt(request.getParameter("txtdisponibilidade"));
                 String categoria = request.getParameter("txtcategoria");
                 String versao = request.getParameter("txtversao");
@@ -103,7 +103,7 @@ public class ControleLivro extends HttpServlet {
             int volume = Integer.parseInt(request.getParameter("txtvolume"));
             String saga = request.getParameter("txtsaga");
             String idioma = request.getParameter("txtidioma");
-            int datapublicacao = Integer.parseInt(request.getParameter("txtdatapublicacao"));
+            String datapublicacao = request.getParameter("txtdatapublicacao");
             int disponibilidade = Integer.parseInt(request.getParameter("txtdisponibilidade"));
             String categoria = request.getParameter("txtcategoria");
             String versao = request.getParameter("txtversao");
@@ -136,7 +136,19 @@ public class ControleLivro extends HttpServlet {
         }
         
         else if (op.equals("ConsultarId")) {
-            mensagem = "Ainda não temos a consulta por ID, reclame ali no RH";
+            int id = Integer.parseInt(request.getParameter("txtid"));
+            L.setId(id);
+
+            try {
+                    Livro resultado = LDAO.consultarID(L);
+                    request.setAttribute("livro", resultado);
+                    mensagem = "Consultado com sucesso";
+                } catch (ClassNotFoundException | SQLException ex) {
+                    mensagem = "ERRO" + ex.getMessage();
+            }
+            
+            request.setAttribute("msg", mensagem);
+            request.getRequestDispatcher("consulta.jsp").forward(request, response);
             }
         
         else if (op.equals("ConsultarTodos")) {
