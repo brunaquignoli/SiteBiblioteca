@@ -54,7 +54,7 @@ public class ControleUsuario extends HttpServlet {
                 }
                 
                 request.setAttribute("msg", mensagem);
-                request.getRequestDispatcher("index.html").forward(request, response);
+                request.getRequestDispatcher("home.jsp").forward(request, response);
             }
 
             /* TODO output your page here. You may use following sample code. */

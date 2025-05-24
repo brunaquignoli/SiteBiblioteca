@@ -135,7 +135,7 @@ public class ControleLivro extends HttpServlet {
             }
         }
         
-        else if (op.equals("ConsultarId")) {
+        else if (op.equals("ConsultarID")) {
             int id = Integer.parseInt(request.getParameter("txtid"));
             L.setId(id);
 
@@ -148,7 +148,7 @@ public class ControleLivro extends HttpServlet {
             }
             
             request.setAttribute("msg", mensagem);
-            request.getRequestDispatcher("consulta.jsp").forward(request, response);
+            request.getRequestDispatcher("consultarID.jsp").forward(request, response);
             }
         
         else if (op.equals("ConsultarTodos")) {
