@@ -17,7 +17,6 @@ body {
   background: linear-gradient(270deg, #FFFFFF, #EDEBE6, #D5C3AA, #EDEBE6, #FFFFFF);
   background-size: 500% 500%;
   animation: gradientBGB 15s ease infinite;
-  min-height: 100vh;
   margin: 0;
 }
 
@@ -198,28 +197,6 @@ body {
   transform: scale(1.1);
   border: 2px solid #000000;
   box-shadow: 0 8px 16px rgba(90, 75, 78, 0.5);
-}
-
-.pesquisar {
-  width: max-content;
-  display: flex;
-  align-items: center;
-  padding: 14px;
-  border-radius: 28px;
-  background-color: #fff;
-
-
-}
-
-.search-input {
-  font-size: 16px;
-  font-family: 'Arial', sans-serif;
-  color: #333333;
-  margin-left: 24px;
-  outline: none;
-  border: none;
-  background: transparent;
-  flex: 1;
 }
 
 /* tela consultar todos*/
