@@ -4,6 +4,9 @@
     Author     : Bruna
 --%>
 
+<%@page import="java.util.List"%>
+<%@page import="java.util.List"%>
+<%@page import="model.Livro"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -56,26 +59,38 @@
         </div>
     </aside>
 
-    <div class="consultas">
-        <p>
-            Id: <br>
-        <br>  Titulo: <br>
-        <br>  Preço: <br>
-        <br> Autor: <br>
-        <br> Editora: <br>
-        <br>  Páginas: <br>
-        <br>  Volume: <br>
-        <br> Saga: <br>
-        <br>  Idioma: <br>
-        <br>  Data de publicação: <br>
-        <br>  Disponibilidade: <br>
-        <br> Categoria: <br>
-        <br>  Sinopse: <br>
-        <br>   Versão: <br>
-        <br>  Classificação indicativa: <br>
-        <br> ISBN: <br>
-        </p>
-    </div>
+<%
+    List<Livro> livros = (List<Livro>) request.getAttribute("livros");
+    if (livros != null && !livros.isEmpty()) {
+        for (Livro livro : livros) {
+%>
+            <div class="livro-card">
+                <p><strong>Id:</strong> <%=livro.getId() %></p>
+                <p><strong>Título:</strong> <%=livro.getTitulo() %></p>
+                <p><strong>Preço:</strong> <%=livro.getPreco() %></p>
+                <p><strong>Autor:</strong> <%=livro.getAutor() %></p>
+                <p><strong>Editora:</strong> <%=livro.getEditora() %></p>
+                <p><strong>Páginas:</strong> <%=livro.getPaginas() %></p>
+                <p><strong>Volume:</strong> <%=livro.getVolume() %></p>
+                <p><strong>Saga:</strong> <%=livro.getSaga() %></p>
+                <p><strong>Idioma:</strong> <%=livro.getIdioma() %></p>
+                <p><strong>Data de publicação:</strong> <%=livro.getDatapublicacao() %></p>
+                <p><strong>Disponibilidade:</strong> <%=livro.getDisponibilidade() %></p>
+                <p><strong>Categoria:</strong> <%=livro.getCategoria() %></p>
+                <p><strong>Sinopse:</strong> <%=livro.getSinopse() %></p>
+                <p><strong>Versão:</strong> <%=livro.getVersao() %></p>
+                <p><strong>Classificação indicativa:</strong> <%=livro.getClassificacaoindicativa() %></p>
+                <p><strong>ISBN:</strong> <%=livro.getIsbn() %></p>
+            </div>
+<%
+        }
+    } else {
+%>
+    <p>Nenhum livro encontrado.</p>
+<%
+    }
+%>
+
 
 </body>
 

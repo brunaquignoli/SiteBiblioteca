@@ -8,39 +8,45 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="estilos/style.css"/>
+        <link rel="stylesheet" href="estilos/home.css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Consulta</title>
     </head>
     <body>
-        <%
-            Livro livro = (Livro) request.getAttribute("livro");
-            String msg = (String) request.getAttribute("msg");
-        %>
-        
-         <% if (livro != null) { %>
-        <p> <%= msg %>
-            ID: <%= livro.getId() %>
-            Titulo: <%= livro.getTitulo() %>
-            Autor: <%= livro.getAutor() %>
-            Sinopse: <%= livro.getSinopse() %>
-            Preço: <%= livro.getPreco()%>
-            Editora: <%= livro.getEditora()%>
-            Paginas: <%= livro.getPaginas()%>
-            Volume:<%= livro.getVolume()%>
-            Saga:<%= livro.getSaga()%>
-            Idioma:<%= livro.getIdioma()%>
-            Data de publicação:<%= livro.getDatapublicacao()%>
-            Disponibilidade:<%= livro.getDisponibilidade()%>
-            Categoria:<%= livro.getCategoria()%>
-            Versão:<%= livro.getVersao()%>
-            Classificação indicativa:<%= livro.getClassificacaoindicativa()%>
-            ISBN:<%= livro.getIsbn()%>
-        </p>    
-        <% } else { %> 
-        <h4> Livro não encontrado!!! </h4> 
-        <% } %>
-        
-        <h1>Hello World!</h1>
+        <a class="voltar" href="home.jsp"> Voltar </a>
+        <div class="consultas">
+
+            <form ACTION="ControleLivro" method="GET">
+                <p>
+                    <%Livro L = (Livro) request.getAttribute("livro");
+                        if (L != null && L.getTitulo() != null) {%>
+                    <br> ID: <%= L.getId()%> <br> 
+                    <br> Titulo: <%= L.getTitulo()%> <br>
+                    <br> Autor: <%= L.getAutor()%> <br> 
+                    <br> Sinopse: <%= L.getSinopse()%> <br>
+                    <br> Preço: <%= L.getPreco()%> <br>
+                    <br> Editora: <%= L.getEditora()%> <br>
+                    <br> Paginas: <%= L.getPaginas()%> <br>
+                    <br> Volume: <%= L.getVolume()%> <br>
+                    <br> Saga: <%= L.getSaga()%> <br>
+                    <br> Idioma: <%= L.getIdioma()%> <br>
+                    <br> Data de publicação: <%= L.getDatapublicacao()%> <br>
+                    <br> Disponibilidade: <%= L.getDisponibilidade()%> <br>
+                    <br> Categoria: <%= L.getCategoria()%> <br>
+                    <br> Versão: <%= L.getVersao()%> <br>
+                    <br> Classificação indicativa: <%= L.getClassificacaoindicativa()%> <br>
+                    <br> ISBN: <%= L.getIsbn()%> <br>
+                </p>
+                <input type="submit" name="op" value="Deletar">
+                <input type="submit" name="op" value="Atualizar">
+                <%
+                } else {
+                %>
+                <h4>Livro não encontrado!</h4>
+                <%
+                    }
+                %>
+            </form>
+        </div>
     </body>
 </html>
