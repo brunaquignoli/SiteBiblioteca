@@ -70,7 +70,7 @@
                     <br> Idioma: <input type="text" name="txtidioma"> <br>
                     <br> Data de publicação: <input type="text" name="txtdatapublicacao"> <br>
                     <br> Disponibilidade: <input type="text" name="txtdisponibilidade"> <br>
-                    <br> Categoria: <input type="text" name="txtcategegoria"> <br>
+                    <br> Categoria: <input type="text" name="txtcategoria"> <br>
                     <br> Sinopse: <input type="text" name="txtsinopse"> <br>
                     <br> Versão: <input type="text" name="txtversao"> <br>
                     <br> Classificação indicativa: <input type="text" name="txtclassificacaoindicativa"> <br>
