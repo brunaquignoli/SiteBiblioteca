@@ -1,23 +1,7 @@
-/* #titulo {
-    text-align: center;
-    font-size: 40px;
-    background: linear-gradient(to right, rgb(66, 166, 233), #da5f17, rgb(201, 30, 110));
-    background: -webkit-linear-gradient(to right, rgb(66, 166, 233), #da5f17, rgb(201, 30, 110));
-    background: -ms-linear-gradient(to right, rgb(66, 166, 233), #da5f17, rgb(201, 30, 110));
-    background: -o-linear-gradient(to right, rgb(66, 166, 233), #da5f17, rgb(201, 30, 110));
-    color: white;
-    padding: 20px;
-    border-radius: 20px;
-    margin: 50px;
-    box-shadow: gray 20px 20px 10px;
-}
-    */
-
 body {
   background: linear-gradient(270deg, #FFFFFF, #EDEBE6, #D5C3AA, #EDEBE6, #FFFFFF);
   background-size: 500% 500%;
   animation: gradientBGB 15s ease infinite;
-  min-height: 100vh;
   margin: 0;
 }
 
@@ -221,8 +205,27 @@ body {
 }
 
 /* tela pesquisar livro */
+
+.Wrapper {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.InputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
 .input {
-  width: 1250px;
+  width: 850px;
   height: 40px;
   border: none;
   outline: none;
@@ -230,16 +233,57 @@ body {
   background-color: #ccc;
   border-radius: 30px;
   padding-left: 30px;
-  margin-left: 185px;
-  text-align: center;
-  letter-spacing: 0.8px;
-  color: rgb(19, 19, 19);
   font-size: 13.4px;
+  color: rgb(19, 19, 19);
 }
 
-.Wrapper {
-  height: 8vh;
+/* input de consultar todos*/
+
+.ctodos {
+    
+}
+
+/* Botão de pesquisa */
+
+.search-btn {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 30px;
+  margin-left: 10px;
+  border: none;
+  width: 60px;
+  height: 40px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 12px;
+  background-color: #ccc;
+}
+
+.search-btn span {
+  font-size: 1rem;
+}
+
+.search-btn:hover{
+  transform: scale(1.1);
+  border: 1px solid white;
+}
+
+/* botão de volta */
+
+.voltar {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: 0.3s ease;
+}
+
+.voltar:hover {
+    background-color: #fcfcfc;
+    transform: scale(1.05);
 }

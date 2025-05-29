@@ -108,13 +108,48 @@ public class LivroDAO {
         return L;
     }
     
+    public Livro consultarTitulo(Livro liv) throws ClassNotFoundException, SQLException {
+        Connection con = conexaosql.getConexao();
+        /* perguntar pro prof se não dá pra fazer algo no sentido de pesquisar algo do titulo e já achar, como um   >     "%" + titulo + "%"
+        */
+        String SQL = "select * from livro where titulo = ?";
+        PreparedStatement comando = con.prepareStatement(SQL);
+        comando.setString(1, liv.getTitulo());
+        ResultSet rs = comando.executeQuery();
+    
+        Livro L = null;
+        
+        if (rs.next()) {
+            L = new Livro();
+            L.setId(rs.getInt("id"));
+            L.setTitulo(rs.getString("titulo"));
+            L.setAutor(rs.getString("autor"));
+            L.setSinopse(rs.getString("sinopse"));
+            L.setPreco(rs.getDouble("preco"));
+            L.setEditora(rs.getString("editora"));
+            L.setPaginas(rs.getInt("paginas"));
+            L.setVolume(rs.getInt("volume"));
+            L.setSaga(rs.getString("saga"));
+            L.setIdioma(rs.getString("idioma"));
+            L.setDatapublicacao(rs.getString("datapublicacao"));
+            L.setDisponibilidade(rs.getInt("disponibilidade"));
+            L.setCategoria(rs.getString("categoria"));
+            L.setVersao(rs.getString("versao"));
+            L.setClassificacaoindicativa(rs.getInt("classificacaoindicativa"));
+            L.setIsbn(rs.getString("isbn"));
+          
+        }
+        con.close();
+        return L;
+    }
+    
     public List<Livro> consultarTodos() throws ClassNotFoundException, SQLException {
         Connection con = conexaosql.getConexao();
         String SQL = "select * from livro";
         PreparedStatement comando = con.prepareStatement(SQL);
         ResultSet rs = comando.executeQuery();
+        
         List<Livro> Lliv = new ArrayList<>();
-
         while (rs.next()) {
             Livro L = new Livro();
             L.setId(rs.getInt("id"));
