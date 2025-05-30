@@ -1,27 +1,12 @@
+-- Se você é um usuário que quer testar nosso código, pode colar isso aqui no seu banco de dados pra ver o código rotando!!
+
 create database bibliotecapoo;
 use bibliotecapoo;
 drop database bibliotecapoo;
 
-INSERT INTO livro (
-  titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma,
-  datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn
-) VALUES (
-  'Star Wars: A Trilogia - Special Edition',
-  'George Lucas',
-  'Esta edição especial reúne os romances inspirados nos três primeiros filmes da saga: Uma Nova Esperança, O Império Contra-Ataca e O Retorno de Jedi.',
-  89.90,
-  'DarkSide Books',
-  528,
-  1,
-  'Star Wars',
-  'Português',
-  '20-05-2014',
-  1,
-  'Ficção científica',
-  'Edição de colecionador',
-  12,
-  '9788566636260'
-);
+SET SQL_SAFE_UPDATES = 0;
+
+-- criação das tables
 
 create table livro (
 id serial primary key,
@@ -42,27 +27,20 @@ classificacaoindicativa int,
 isbn varchar(30)
 );
 
--- INSERT TEST
-insert into livro (titulo, autor, editora) values ("teste", "teste", "teste");
-
-delete from livro where titulo = "teste";
-
-SET SQL_SAFE_UPDATES = 0;
-
-select * from livro;
-drop table livro;
-
 create table tb_usuario(
 id serial,
 login varchar(50),
 senha varchar(50)
 );
 
+-- select from tables
+
+select * from livro;
 select * from tb_usuario;
 
-
+-- O Pequeno Príncipe
 INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma, datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn) VALUES (
-	'O Pequeno Príncipe',
+    'O Pequeno Príncipe',
     'Antoine de Saint-Exupéry',
     'Nesta história que marcou gerações de leitores em todo o mundo, um piloto cai com seu avião no deserto do Saara e encontra um pequeno príncipe, que o leva a uma aventura filosófica e poética através de planetas que encerram a solidão humana.',
     15.35,
@@ -212,6 +190,7 @@ INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga
     '978-6555114997'
 );
 
+-- Re:Zero - Começando uma Vida em Outro Mundo - Livro 10
 INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma, datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn) VALUES (
  'Re:Zero', 
  'Tappei Nagatsuki',  
@@ -228,4 +207,26 @@ INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga
     'Capa comum',
     16,
     '978-8583622567'
+);
+
+-- Star Wars: A Trilogia
+INSERT INTO livro (
+  titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma,
+  datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn
+) VALUES (
+  'Star Wars: A Trilogia - Special Edition',
+  'George Lucas',
+  'Esta edição especial reúne os romances inspirados nos três primeiros filmes da saga: Uma Nova Esperança, O Império Contra-Ataca e O Retorno de Jedi.',
+  89.90,
+  'DarkSide Books',
+  528,
+  1,
+  'Star Wars',
+  'Português',
+  '20-05-2014',
+  1,
+  'Ficção científica',
+  'Edição de colecionador',
+  12,
+  '9788566636260'
 );
