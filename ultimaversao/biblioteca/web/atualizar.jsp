@@ -1,7 +1,7 @@
 <%-- 
     Document   : atualizar
-    Created on : 29 de mai. de 2025, 19:08:06
-    Author     : Pedrovisk
+    Created on : 29 de mai. de 2025, 17:43:12
+    Author     : bruna
 --%>
 
 <%@page import="model.Livro"%>
@@ -66,8 +66,7 @@
                 <div class="linha">
                     <div class="campo-formulario">
                         <label> ID </label>
-                        
-                    <%=L.getId()%><input type="hidden" name="txtid" value="<%=L.getId()%>">
+                    <%=L.getId()%> <input type="hidden" name="txtid" value="<%=L.getId()%>">
                     </div>
                     <div class="campo-formulario">
                         <label>Autor</label> 
@@ -121,7 +120,7 @@
                 <div class="linha">
                     <div class="campo-formulario">
                         <label>Data de Publicação</label>
-                        <input type="text" name="txtdatapublicacao" value="<%=L.getDatapublicacao()%>" />
+                        <input type="date" name="txtdatapublicacao" value="<%=L.getDatapublicacao()%>" />
                     </div>
                     <div class="campo-formulario">
                         <label>Disponibilidade</label>
@@ -129,7 +128,7 @@
                     </div>
                     <div class="campo-formulario">
                         <label>Preço</label>
-                        <input type="text" name="txtPreco" value="<%=L.getPreco()%>"/>
+                        <input type="text" name="txtpreco" value="<%=L.getPreco()%>"/>
                     </div>
                 </div>
 
@@ -142,7 +141,7 @@
 
                 <div class="campo-formulario">
                     <label>Sinopse</label>
-                    <input type="text" name="txtsinopse" value="<%=L.getSinopse()%>" />
+                    <input name="txtsinopse" rows="3" value="<%=L.getSinopse()%>"/>
                 </div>
 
                 <div class="campo-formulario">
@@ -151,7 +150,7 @@
                 </div>
 
                 <div class="botoes">
-                    <input class="button-cons" type="submit" name="op" value="Efetivar Atualização"  />
+                    <input class="button-cons" type="submit" name="op" value="Efetivar Atualização"/>
                 </div>
 
                 <%} else {%>

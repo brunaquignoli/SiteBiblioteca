@@ -81,49 +81,10 @@ public class ControleLivro extends HttpServlet {
                 } catch (ClassNotFoundException | SQLException ex) {
                     mensagem = "ERRO" + ex.getMessage();
                 }
-                request.setAttribute("msg", mensagem);
-                request.getRequestDispatcher("resultados.jsp").forward(request, response);
-              
-                 
-                
-                } else if (op.equals("Deletar")) {
-                int id = Integer.parseInt(request.getParameter("txtid"));
-                L.setId(id);
-                try {
-                    LDAO.deletarID(L);
-                    mensagem = "Deletado com sucesso";
-                } catch (ClassNotFoundException | SQLException ex) {
-                    mensagem = "ERRO" + ex.getMessage();
-                }
-                request.setAttribute("msg", mensagem);
-                request.getRequestDispatcher("resultados.jsp").forward(request, response);
-                
-                
-                
-                } else if (op.equals("ConsultarID")) {
-                int id = Integer.parseInt(request.getParameter("txtId"));
-                L.setId(id);
-                try {
-                    Livro resultado = LDAO.consultarID(L);
-                    request.setAttribute("livro", resultado);
-                    mensagem = "Consultado com sucesso";
-                } catch (ClassNotFoundException | SQLException ex) {
-                    mensagem = "ERRO" + ex.getMessage();
-                }
 
                 request.setAttribute("msg", mensagem);
-                request.getRequestDispatcher("consulta.jsp").forward(request, response);   
-                
-                } else if (op.equals("Consultar todos os livros")) {
-                try {
-                    List<Livro> livros = LDAO.consultarTodos();
-                    request.setAttribute("livro", livros);
-                    request.getRequestDispatcher("consultarTODOS.jsp").forward(request, response);
-                } catch (ClassNotFoundException | SQLException ex) {
-                    System.out.println("Erro ClassNotFound: " + ex.getMessage());
-                }
-            
-                
+                request.getRequestDispatcher("resultados.jsp").forward(request, response);
+
             } else if (op.equals("Atualizar")) {
                 int id = Integer.parseInt(request.getParameter("txtid"));
                 L.setId(id);
@@ -131,14 +92,16 @@ public class ControleLivro extends HttpServlet {
                     Livro resultado = LDAO.consultarID(L);
                     request.setAttribute("livro", resultado);
                     request.getRequestDispatcher("atualizar.jsp").forward(request, response);
+ 
                 } catch (ClassNotFoundException | SQLException ex) {
                     mensagem = "ERRO" + ex.getMessage();
+                    request.setAttribute("msg", mensagem);
+                    request.getRequestDispatcher("resultados.jsp").forward(request, response);
                 }
-                request.setAttribute("msg", mensagem);
-                request.getRequestDispatcher("resultados.jsp").forward(request, response);
                 
-                
-                } else if (op.equals("Efetivar Atualização")) {
+
+            
+            } else if (op.equals("Efetivar Atualização")) {
                 int id = Integer.parseInt(request.getParameter("txtid"));
                 String titulo = request.getParameter("txttitulo");
                 String autor = request.getParameter("txtautor");
@@ -172,20 +135,48 @@ public class ControleLivro extends HttpServlet {
                 L.setVersao(versao);
                 L.setClassificacaoindicativa(classificacaoindicativa);
                 L.setIsbn(isbn);
-                
+
+                String msg = "Atualizar";
                 try {
                     LDAO.atualizar(L);
-                    System.out.println("Atualizado com sucesso!!");
-                    request.setAttribute("message", mensagem);
-                    request.getRequestDispatcher("resultados.jsp").forward(request, response);
+                    Livro resultado = LDAO.consultarID(L);
+                    request.setAttribute("livro", resultado);
+                    mensagem = "Atualizado com sucesso!";
                 } catch (ClassNotFoundException | SQLException ex) {
                     mensagem = "ERRO" + ex.getMessage();
                 }
-                    request.setAttribute("msg", mensagem);
-                    request.getRequestDispatcher("resultados.jsp").forward(request, response);
                 
-                
-                
+                request.setAttribute("msg", mensagem);
+                request.getRequestDispatcher("resultados.jsp").forward(request, response);
+
+            } else if (op.equals("Deletar")) {
+                int id = Integer.parseInt(request.getParameter("txtid"));
+                L.setId(id);
+                try {
+                    LDAO.deletarID(L);
+                    mensagem = "Deletado com sucesso";
+                } catch (ClassNotFoundException | SQLException ex) {
+                    mensagem = "ERRO" + ex.getMessage();
+                }
+
+                request.setAttribute("msg", mensagem);
+                request.getRequestDispatcher("resultados.jsp").forward(request, response);
+
+            } else if (op.equals("ConsultarID")) {
+                int id = Integer.parseInt(request.getParameter("txtId"));
+                L.setId(id);
+
+                try {
+                    Livro resultado = LDAO.consultarID(L);
+                    request.setAttribute("livro", resultado);
+                    mensagem = "Consultado com sucesso";
+                } catch (ClassNotFoundException | SQLException ex) {
+                    mensagem = "ERRO" + ex.getMessage();
+                }
+
+                request.setAttribute("msg", mensagem);
+                request.getRequestDispatcher("consulta.jsp").forward(request, response);
+
             } else if (op.equals("ProcurarTitulo")) {
                 String titulo = request.getParameter("txtTitulo");
                 L.setTitulo(titulo);
@@ -200,8 +191,17 @@ public class ControleLivro extends HttpServlet {
 
                 request.setAttribute("msg", mensagem);
                 request.getRequestDispatcher("consulta.jsp").forward(request, response);
-                
+
+            } else if (op.equals("Consultar todos os livros")) {
+                try {
+                    List<Livro> livros = LDAO.consultarTodos();
+                    request.setAttribute("livro", livros);
+                    request.getRequestDispatcher("consultarTODOS.jsp").forward(request, response);
+                } catch (ClassNotFoundException | SQLException ex) {
+                    System.out.println("Erro ClassNotFound: " + ex.getMessage());
+                }
             }
+
         }
     }
 
