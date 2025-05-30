@@ -59,9 +59,9 @@ Após a pesquisa, o sistema exibe todas as informações do livro.
 
 ---
 
-### Atualizar livro
+ ### Atualizar livro
 
-Ao clicar em "Atualizar", uma nova tela é exibida com os campos editáveis (exceto o ID).  
+> Ao clicar em "Atualizar", uma nova tela é exibida com os campos editáveis (exceto o ID).  
 Depois de realizar as alterações, basta clicar em "Efetivar Atualização".
 
 ![Screenshot 2025-05-30 132415](https://github.com/user-attachments/assets/bcd601d8-d81c-4d73-a900-30a1b3418f1c)
@@ -70,7 +70,7 @@ Depois de realizar as alterações, basta clicar em "Efetivar Atualização".
 
 ### Deletar livro
 
-Ao clicar em "Deletar", o sistema solicita uma confirmação antes de excluir o livro.
+> Ao clicar em "Deletar", o sistema solicita uma confirmação antes de excluir o livro.
 
 ![Screenshot 2025-05-30 132430](https://github.com/user-attachments/assets/dc27b096-4aba-4ca9-a6b8-a8a3f6b6c337)
 
