@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" href="estilos\logincss.css">
+        <script src="login.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Bem Vindo(a)! </title>
+    </head>
+    <body>
+
+        <div class="container-outro">
+            <h1 class="texto"> Bem vindo(a) ao nosso site!  </h1>
+            <section> 
+                <p> <br> Nossa biblioteca é gratuita e livre</p> 
+            </section>
+
+        </div>
+
+        <main class="container">
+            <form ACTION="ControleUsuario" method="GET">
+                <h1> Faça seu login!</h1>
+                <div class="inputbox">
+                    <input placeholder="Digite seu email" type="email" name="txtemail" required>        
+                </div>
+                <div class="inputbox">
+                    <input placeholder="Digite sua senha" type="password" name="txtsenha" required>
+                </div>
+                <div>
+
+                </div>
+
+                <div>
+                    <label>
+                        <input type="checkbox">
+                        Lembrar senha
+                    </label>
+                    <br>
+                    <a class="esqsenha" href="SENHA\esqueciSenha.html"> Esqueci minha senha </a>
+                </div>
+
+                <input type="submit" class="login" name="operacao" value="LOGIN"/>
+
+                <div class="registerlink">
+                    <p> Não possuo conta ➜ <a href="#"> Cadastre-se agora! </a> </p>
+                </div>
+            </form>
+
+        </main>
+
+    </body>
+</html>
