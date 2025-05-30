@@ -1,4 +1,5 @@
 -- Se você é um usuário que quer testar nosso código, pode colar isso aqui no seu banco de dados pra ver o código rotando!!
+-- PS: Nesse projeto nós utilizamos o MySQL como Gerenciador!
 
 create database bibliotecapoo;
 use bibliotecapoo;
