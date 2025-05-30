@@ -1,6 +1,24 @@
-# siteIOO
+# bb8ks – Sistema de Livraria
+bb8ks é um sistema de gerenciamento de livros, desenvolvido em Java com integração ao banco de dados MySQL, utilizando o JSBC.   
+Ele permite cadastrar, atualizar, deletar e consultar livros. A consulta pode ser feita por título, id e por consulta geral (de todos os livros).
 
-só pra termos uma noção de como o figma tá até agora, caso precisemos mostrar pro professor
-![image](https://github.com/user-attachments/assets/d4be2cef-653e-4263-8acf-a1d2ad1aa7e6)
-![image](https://github.com/user-attachments/assets/2cd1d0c4-1efc-4cff-82a8-84a5dc7bb9d1)
+## Funcionalidades
+> Cadastro do funcionário  
+> Acesso à biblioteca inteira  
+> Pesquisa de livros:  
+>   Consulta por ID  
+>   Consulta por título  
+>   Consulta geral  
+> Cadastro de livros  
+> Atualização de dados de um livro  
+> Exclusão de livros  
 
+
+
+## Tecnologias Utilizadas:  
+> HTML  
+> CSS  
+> Java com JDBC  
+> MySQL para o banco de dados  
+> IDE usada: NetBeans  
+> Apache Tomcat para servidor de aplicação  
