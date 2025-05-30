@@ -99,3 +99,7 @@ Após a confirmação, o sistema exibe os dados completos de todos os livros cad
 
 ![Screenshot 2025-05-30 133356](https://github.com/user-attachments/assets/9267e125-eb6e-410a-ac3e-792ba435e177)
 ![image](https://github.com/user-attachments/assets/7fbb934d-2993-4083-9c76-7080b424a388)
+
+# Status do projeto
+
+Finalizado!!
