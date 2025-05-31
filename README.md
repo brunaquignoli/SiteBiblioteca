@@ -17,7 +17,8 @@ Ele permite cadastrar, atualizar, deletar e consultar livros. As consultas podem
 ## Tecnologias Utilizadas
 
 - HTML  
-- CSS  
+- CSS
+- JavaScript    
 - Java (com JDBC e Servlets)  
 - Apache Tomcat (servidor de aplicação)  
 - MySQL (banco de dados)  

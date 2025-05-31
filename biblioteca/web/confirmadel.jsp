@@ -10,11 +10,12 @@
 <html>
     <head>
         <link rel="stylesheet" href="estilos/home.css"/>
+        <script src="JavaScript.js"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Confirmar deletar</title>
     </head>
     <body>
-        <a class="voltar" href="home.jsp"> Voltar </a>
+        <button class="voltar" onclick="voltar()"> Voltar </button>
         <div class="consultas">
 
             <form ACTION="ControleLivro" method="GET">
