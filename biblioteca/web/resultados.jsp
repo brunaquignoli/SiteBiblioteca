@@ -9,11 +9,12 @@
 <html>
     <head>
         <link rel="stylesheet" href="estilos\home.css">
+        <script src="JavaScript.js"> </script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
     <body>
-        <a class="voltar" href="home.jsp"> Voltar </a>
+        <a class="voltar" href="home.jsp" onclick="voltar()"> Voltar </a>
         <div class="consultas">
             <%
                 String msg = (String) request.getAttribute("msg");
