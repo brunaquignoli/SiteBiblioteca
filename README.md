@@ -56,7 +56,8 @@ Nesta tela, é possível buscar livros pelo título usando o botão de busca.
 Após a pesquisa, o sistema exibe todas as informações do livro.  
 É possível atualizar ou deletar o livro diretamente desta tela.
 
-![Screenshot 2025-05-30 132405](https://github.com/user-attachments/assets/0513ce3a-6da1-4183-871e-430a2cb1de86)
+<img width="1920" height="968" alt="image" src="https://github.com/user-attachments/assets/37f1436f-a7fe-4147-b0cd-5ba1441c872e" />
+
 
 ---
 
@@ -65,7 +66,8 @@ Após a pesquisa, o sistema exibe todas as informações do livro.
 > Ao clicar em "Atualizar", uma nova tela é exibida com os campos editáveis (exceto o ID).  
 Depois de realizar as alterações, basta clicar em "Efetivar Atualização".
 
-![Screenshot 2025-05-30 132415](https://github.com/user-attachments/assets/bcd601d8-d81c-4d73-a900-30a1b3418f1c)
+<img width="1920" height="970" alt="image" src="https://github.com/user-attachments/assets/96e1ea3a-6f79-4341-bd8c-364bad4f8413" />
+
 
 ---
 
@@ -82,7 +84,8 @@ Depois de realizar as alterações, basta clicar em "Efetivar Atualização".
 Tela com formulário completo para inserir os dados de um novo livro.  
 Após o preenchimento, basta clicar em "Cadastrar".
 
-![Screenshot 2025-05-30 132439](https://github.com/user-attachments/assets/a9c863e9-d626-4012-8170-92d42c092272)
+<img width="1920" height="970" alt="image" src="https://github.com/user-attachments/assets/2fddc722-b2d3-4a32-b1f4-5e3c93c99a25" />
+
 
 ---
 
@@ -98,8 +101,9 @@ Mostra uma galeria com as capas dos livros e um botão que permite visualizar to
 
 Após a confirmação, o sistema exibe os dados completos de todos os livros cadastrados, organizados por ordem numérica do ID.
 
-![Screenshot 2025-05-30 133356](https://github.com/user-attachments/assets/9267e125-eb6e-410a-ac3e-792ba435e177)
-![image](https://github.com/user-attachments/assets/7fbb934d-2993-4083-9c76-7080b424a388)
+<img width="1920" height="969" alt="image" src="https://github.com/user-attachments/assets/d2e3f9db-6ee5-438f-9013-6d5d8d92cccf" />
+<img width="1920" height="971" alt="image" src="https://github.com/user-attachments/assets/08ac32ef-aca1-4267-b724-002a49259bbd" />
+
 
 # Status do projeto
 
