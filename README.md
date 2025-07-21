@@ -87,8 +87,9 @@ Mostra uma galeria com as capas dos livros e um botão que permite visualizar to
 
 Após a confirmação, o sistema exibe os dados completos de todos os livros cadastrados, organizados por ordem numérica do ID.
 
-<img width="1920" height="969" alt="image" src="https://github.com/user-attachments/assets/d2e3f9db-6ee5-438f-9013-6d5d8d92cccf" />
-<img width="1920" height="971" alt="image" src="https://github.com/user-attachments/assets/08ac32ef-aca1-4267-b724-002a49259bbd" />
+<img width="1920" height="965" alt="image" src="https://github.com/user-attachments/assets/227a24c0-ac1d-448f-a8d3-41ac6639a6f8" />
+<img width="1920" height="969" alt="image" src="https://github.com/user-attachments/assets/adfb87bf-5ef9-4b3b-ad1e-4df800fc87af" />
+
 
 ---
 
