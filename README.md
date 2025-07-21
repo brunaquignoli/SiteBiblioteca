@@ -4,13 +4,14 @@
 Ele permite cadastrar, atualizar, deletar e consultar livros. As consultas podem ser realizadas por título, por ID ou exibir todos os livros cadastrados.
 
 ## Funcionalidades
-- [Cadastro de funcionários](#tela-de-login)  
+- [Cadastro](#tela-de-login)  
 - [Acesso à biblioteca completa](#tela-inicial-do-sistema)
 - Pesquisa de livros:
-  - [Pesquisa de livros por ID](#pesquisa-por-id)
   - [Pesquisa de livros por título](#pesquisa-por-título)
+  - [Pesquisa de livros por ID](#pesquisa-por-id)
   - [Resultado da busca](#resultado-da-busca)  
-  - [Consulta geral](#exibir-todos-os-livros)  
+  - [Consulta geral](#exibir-todos-os-livros)
+  - [Todas as informações](#informações-completas-de-todos-os-livros)
 - [Cadastro de livros](#cadastro-de-livros)  
 - [Atualização de dados de um livro](#atualizar-livro)  
 - [Exclusão de livros](#deletar-livro)
@@ -57,6 +58,14 @@ Nesta tela, é possível buscar livros pelo título usando o botão de busca.
 
 ---
 
+### Pesquisa por ID
+
+De forma semelhante à pesquisa por título, ao é possível buscar livros pelo id usando o botão de busca.
+
+<img width="1920" height="975" alt="image" src="https://github.com/user-attachments/assets/97b56468-ad4e-4d5f-bdba-1ee1a3580a11" />
+
+---
+
 ### Resultado da busca
 
 Após a pesquisa, o sistema exibe todas as informações do livro.  
@@ -66,11 +75,29 @@ Após a pesquisa, o sistema exibe todas as informações do livro.
 
 ---
 
-### Pesquisa por ID
+### Exibir todos os livros
 
-De forma semelhante à pesquisa por título, ao é possível buscar livros pelo id usando o botão de busca.
+Mostra uma galeria com as capas dos livros e um botão que permite visualizar todos os detalhes.
 
-<img width="1920" height="975" alt="image" src="https://github.com/user-attachments/assets/97b56468-ad4e-4d5f-bdba-1ee1a3580a11" />
+![Screenshot 2025-05-30 133347](https://github.com/user-attachments/assets/a7b54f97-db1a-4dcd-82a3-8e6b38235f80)
+
+---
+
+### Informações completas de todos os livros
+
+Após a confirmação, o sistema exibe os dados completos de todos os livros cadastrados, organizados por ordem numérica do ID.
+
+<img width="1920" height="969" alt="image" src="https://github.com/user-attachments/assets/d2e3f9db-6ee5-438f-9013-6d5d8d92cccf" />
+<img width="1920" height="971" alt="image" src="https://github.com/user-attachments/assets/08ac32ef-aca1-4267-b724-002a49259bbd" />
+
+---
+
+### Cadastro de livros
+
+Tela com formulário completo para inserir os dados de um novo livro.  
+Após o preenchimento, basta clicar em "Cadastrar".
+
+<img width="1920" height="970" alt="image" src="https://github.com/user-attachments/assets/2fddc722-b2d3-4a32-b1f4-5e3c93c99a25" />
 
 
 ---
@@ -91,33 +118,6 @@ Depois de realizar as alterações, basta clicar em "Efetivar Atualização".
 
 <img width="1920" height="966" alt="image" src="https://github.com/user-attachments/assets/c74c6c08-7848-4c0a-a62d-16e0cd3ff648" />
 
-
----
-
-### Cadastro de livros
-
-Tela com formulário completo para inserir os dados de um novo livro.  
-Após o preenchimento, basta clicar em "Cadastrar".
-
-<img width="1920" height="970" alt="image" src="https://github.com/user-attachments/assets/2fddc722-b2d3-4a32-b1f4-5e3c93c99a25" />
-
-
----
-
-### Exibir todos os livros
-
-Mostra uma galeria com as capas dos livros e um botão que permite visualizar todos os detalhes.
-
-![Screenshot 2025-05-30 133347](https://github.com/user-attachments/assets/a7b54f97-db1a-4dcd-82a3-8e6b38235f80)
-
----
-
-### Informações completas de todos os livros
-
-Após a confirmação, o sistema exibe os dados completos de todos os livros cadastrados, organizados por ordem numérica do ID.
-
-<img width="1920" height="969" alt="image" src="https://github.com/user-attachments/assets/d2e3f9db-6ee5-438f-9013-6d5d8d92cccf" />
-<img width="1920" height="971" alt="image" src="https://github.com/user-attachments/assets/08ac32ef-aca1-4267-b724-002a49259bbd" />
 
 
 # Status do projeto
