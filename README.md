@@ -33,14 +33,18 @@ Nesta tela, o usuário pode se cadastrar e fazer login no sistema.
 
 ![Screenshot 2025-05-30 131807](https://github.com/user-attachments/assets/82ca2afd-bfe7-47c7-9d9c-c23c2aaeb038)
 
+
+
 ---
 
 ### Tela inicial do sistema
 
-Exibe todos os livros cadastrados de forma rápida.  
+Exibe todos os livros cadastrados de forma rápida.  Ao clicar nas capas, é possível ver as informações sobre o livro escolhido, como feito no exemplo com o livro "Dom Quixote".
 A sidebar está aberta, mostrando as demais funcionalidades disponíveis.
 
 ![Screenshot 2025-05-30 131828](https://github.com/user-attachments/assets/4bea9dab-e82b-4b91-8144-ec0699d10adb)
+<img width="1920" height="969" alt="image" src="https://github.com/user-attachments/assets/e45d7a66-8d88-4e8f-b15d-38e72423332a" />
+<img width="1920" height="966" alt="image" src="https://github.com/user-attachments/assets/8c320a4a-7dd1-4f9e-a630-044e9430dd14" />
 
 ---
 
