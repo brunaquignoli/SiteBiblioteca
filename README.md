@@ -89,7 +89,8 @@ Depois de realizar as alterações, basta clicar em "Efetivar Atualização".
 
 > Ao clicar em "Deletar", o sistema solicita uma confirmação antes de excluir o livro.
 
-![Screenshot 2025-05-30 132430](https://github.com/user-attachments/assets/dc27b096-4aba-4ca9-a6b8-a8a3f6b6c337)
+<img width="1920" height="966" alt="image" src="https://github.com/user-attachments/assets/c74c6c08-7848-4c0a-a62d-16e0cd3ff648" />
+
 
 ---
 
