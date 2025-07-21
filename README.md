@@ -7,8 +7,9 @@ Ele permite cadastrar, atualizar, deletar e consultar livros. As consultas podem
 - [Cadastro de funcionários](#tela-de-login)  
 - [Acesso à biblioteca completa](#tela-inicial-do-sistema)
 - Pesquisa de livros:
-  - [Pesquisa de livros por ID](#resultado-da-busca)  
-  - [Pesquisa de livros por título](#pesquisa-por-título)  
+  - [Pesquisa de livros por ID](#pesquisa-por-id)
+  - [Pesquisa de livros por título](#pesquisa-por-título)
+  - [Resultado da busca](#resultado-da-busca)  
   - [Consulta geral](#exibir-todos-os-livros)  
 - [Cadastro de livros](#cadastro-de-livros)  
 - [Atualização de dados de um livro](#atualizar-livro)  
@@ -57,6 +58,14 @@ Após a pesquisa, o sistema exibe todas as informações do livro.
 É possível atualizar ou deletar o livro diretamente desta tela.
 
 <img width="1920" height="968" alt="image" src="https://github.com/user-attachments/assets/37f1436f-a7fe-4147-b0cd-5ba1441c872e" />
+
+---
+
+### Pesquisa por ID
+
+De forma semelhante à pesquisa por título, ao é possível buscar livros pelo id usando o botão de busca.
+
+<img width="1920" height="975" alt="image" src="https://github.com/user-attachments/assets/97b56468-ad4e-4d5f-bdba-1ee1a3580a11" />
 
 
 ---
