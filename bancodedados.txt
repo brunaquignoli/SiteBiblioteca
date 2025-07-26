@@ -39,6 +39,9 @@ senha varchar(50)
 
 select * from livro;
 select * from tb_usuario;
+
+-- insert nas tables
+
 -- O Pequeno Príncipe
 INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma, datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn, caminhoimagem) VALUES (
     'O Pequeno Príncipe',
