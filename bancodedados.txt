@@ -3,7 +3,7 @@
 
 create database bibliotecapoo;
 use bibliotecapoo;
-drop database bibliotecapoo;
+ -- drop database bibliotecapoo;
 
 SET SQL_SAFE_UPDATES = 0;
 
@@ -25,7 +25,8 @@ disponibilidade int,
 categoria text,
 versao varchar(50),
 classificacaoindicativa int,
-isbn varchar(30)
+isbn varchar(30),
+caminhoimagem VARCHAR(255)
 );
 
 create table tb_usuario(
@@ -38,9 +39,8 @@ senha varchar(50)
 
 select * from livro;
 select * from tb_usuario;
-
 -- O Pequeno Príncipe
-INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma, datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn) VALUES (
+INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma, datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn, caminhoimagem) VALUES (
     'O Pequeno Príncipe',
     'Antoine de Saint-Exupéry',
     'Nesta história que marcou gerações de leitores em todo o mundo, um piloto cai com seu avião no deserto do Saara e encontra um pequeno príncipe, que o leva a uma aventura filosófica e poética através de planetas que encerram a solidão humana.',
@@ -55,11 +55,12 @@ INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga
     'Fábula, Novela, Ficção histórica, Literatura Infantil',
     'Capa comum e Kindle',
     0,
-    '978-8595081512'
+    '978-8595081512',
+'imagens/imagem1.png'
 );
 
 -- Memórias Póstumas de Brás Cubas
-INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma, datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn) VALUES (
+INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma, datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn, caminhoimagem) VALUES (
     'Memórias Póstumas de Brás Cubas',
     'Machado de Assis',
     'Narrado por um defunto, o romance satiriza a sociedade brasileira do século XIX, apresentando a vida de Brás Cubas e suas reflexões sobre a morte e a vida.',
@@ -74,11 +75,12 @@ INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga
     'Romance, Realismo, Literatura Brasileira',
     'Capa comum',
     0,
-    '978-8522031234'
+    '978-8522031234',
+'imagens/imagem2.png'
 );
 
 -- Dom Quixote
-INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma, datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn) VALUES (
+INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma, datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn, caminhoimagem) VALUES (
     'Dom Quixote',
     'Miguel de Cervantes',
     'A história do fidalgo que enlouquece após ler romances de cavalaria e decide sair em busca de aventuras como cavaleiro andante.',
@@ -93,11 +95,12 @@ INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga
     'Romance, Clássico, Literatura Espanhola',
     'Capa comum',
     0,
-    '978-8516079444'
+    '978-8516079444',
+'imagens/imagem3.png'
 );
 
 -- Frankenstein: Anatomia de Monstro
-INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma, datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn) VALUES (
+INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma, datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn, caminhoimagem) VALUES (
     'Frankenstein',
     'Kathryn Harkup',
     'Uma análise científica e histórica dos elementos que inspiraram Mary Shelley a criar o monstro de Frankenstein.',
@@ -112,11 +115,12 @@ INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga
     'Não-ficção, História, Ciência',
     'Capa dura',
     0,
-    '978-6555982602'
+    '978-6555982602',
+'imagens/imagem4.png'
 );
 
 -- O Timbre: 3
-INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma, datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn) VALUES (
+INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma, datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn, caminhoimagem) VALUES (
     'O Timbre',
     'Neal Shusterman',
     'No desfecho da trilogia *Scythe*, a humanidade enfrenta as consequências de um mundo sem morte, onde a corrupção e a sede de poder ameaçam a sociedade. A inteligência artificial Nimbo-Cúmulo se silencia, deixando os humanos lidarem com suas escolhas. Surge a tríade dos tonistas: o Tom, o Timbre e a Trovoada, oferecendo novas perspectivas para o caos instaurado.',
@@ -131,11 +135,12 @@ INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga
     'Ficção científica, Distopia, Jovem adulto',
     'Capa comum',
     14,
-    '978-8555341052'
+    '978-8555341052',
+'imagens/imagem5.png'
 );
 
 -- Quincas Borba: Le Philosophe ou Le Chien
-INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma, datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn) VALUES (
+INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma, datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn, caminhoimagem) VALUES (
     'Quincas Borba',
     'Machado de Assis',
     'A história de Rubião, discípulo de Quincas Borba, que herda a fortuna do filósofo e enfrenta dilemas existenciais.',
@@ -150,11 +155,12 @@ INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga
     'Romance, Realismo, Literatura Brasileira',
     'Capa comum',
     0,
-    '978-2841000911'
+    '978-2841000911',
+'imagens/imagem6.png'
 );
 
 -- O Mar de Monstros: Série Percy Jackson e os Olimpianos (novas capas): 2
-INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma, datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn) VALUES (
+INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma, datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn, caminhoimagem) VALUES (
     'O Mar de Monstros',
     'Rick Riordan',
     'Percy Jackson e seus amigos embarcam em uma nova aventura para salvar o Acampamento Meio-Sangue, enfrentando monstros e desafios.',
@@ -169,11 +175,12 @@ INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga
     'Ficção Infantojuvenil, Aventura, Fantasia',
     'Capa mole',
     0,
-    '978-6555114997'
+    '978-6555114997',
+'imagens/imagem7.png'
 );
 
 -- As Crônicas de Nárnia - Coleção de Luxo: A Viagem do Peregrino da Alvorada
-INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma, datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn) VALUES (
+INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma, datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn, caminhoimagem) VALUES (
     'As Crônicas de Nárnia',
     'C. S. Lewis',
     'Edmundo e Lúcia se juntam ao Rei Caspian em uma jornada pelo mar em busca dos sete lordes perdidos de Nárnia.',
@@ -188,11 +195,11 @@ INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga
     'Ficção Infantojuvenil, Fantasia, Aventura',
     'Capa dura',
     0	,
-    '978-6555114997'
+    '978-6555114997',
+'imagens/imagem8.png'
 );
 
--- Re:Zero - Começando uma Vida em Outro Mundo - Livro 10
-INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma, datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn) VALUES (
+INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma, datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn, caminhoimagem) VALUES (
  'Re:Zero', 
  'Tappei Nagatsuki',  
  'Subaru Natsuki, um adolescente do ensino médio, é invocado de repente para um outro mundo enquanto voltava de uma loja de conveniência. Essa seria a tão famosa invocação a um outro mundo?! No entanto, ele não encontrou a pessoa que o invocou, foi atacado por ladrões e correu risco de vida. Quem o salvou foi uma misteriosa e bela garota de cabelos prateados acompanhada de um espírito de um gato. Com o pretexto de retribuir o favor, Subaru ajuda a garota a procurar um objeto que perdeu. Contudo, quando finalmente eles encontram uma pista do que procuram, os dois são atacados por alguém e acabam morrendo… ao menos, era o que Subaru achava, até perceber que estava de volta ao mesmo lugar onde havia sido invocado pela primeira vez nesse mundo.',
@@ -207,27 +214,6 @@ INSERT INTO livro (titulo, autor, sinopse, preco, editora, paginas, volume, saga
     'Mangá HQs, Mangás e Graphic Novels',
     'Capa comum',
     16,
-    '978-8583622567'
-);
-
--- Star Wars: A Trilogia
-INSERT INTO livro (
-  titulo, autor, sinopse, preco, editora, paginas, volume, saga, idioma,
-  datapublicacao, disponibilidade, categoria, versao, classificacaoindicativa, isbn
-) VALUES (
-  'Star Wars: A Trilogia - Special Edition',
-  'George Lucas',
-  'Esta edição especial reúne os romances inspirados nos três primeiros filmes da saga: Uma Nova Esperança, O Império Contra-Ataca e O Retorno de Jedi.',
-  89.90,
-  'DarkSide Books',
-  528,
-  1,
-  'Star Wars',
-  'Português',
-  '20-05-2014',
-  1,
-  'Ficção científica',
-  'Edição de colecionador',
-  12,
-  '9788566636260'
+    '978-8583622567',
+'imagens/imagem9.png'
 );
