@@ -26,6 +26,9 @@ Ele permite cadastrar, atualizar, deletar e consultar livros. As consultas podem
 - MySQL (banco de dados)  
 - IDE utilizada: NetBeans  
 
+## Script do banco de dados
+[Banco de dados](bancodedados.txt)
+
 ## Imagens de exemplo das funcionalidades
 
 ### Tela de login
